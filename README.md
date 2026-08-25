@@ -1,36 +1,49 @@
-Text-Based Chatbot
-	This text-based chatbot uses the ChatterBot library to provide intelligent and engaging responses. 
-	It is trained on custom dialogues and the ChatterBot corpus, enabling it to handle a wide range of conversational topics effectively.
+# Text Chatbot
 
-Requirements:
+## Overview
+A simple command-line chatbot built in Python using the ChatterBot library. The project combines custom conversation examples with the ChatterBot English corpus to create a basic text-based conversational experience.
 
-	Python 3.7.4, Visual Studio Code or similar
+## Features
+- Command-line chatbot interface
+- Custom dialogue training data
+- Additional training using the ChatterBot English corpus
+- Simple interactive conversation loop
+- Exit commands for ending the session cleanly
 
-To get the text-based chatbot running, install the following libraries:
+## Tech Stack
+- Python
+- ChatterBot
+- ChatterBot Corpus
+- spaCy
 
-	1.	chatterbot: For the chatbot framework.
+## Project Purpose
+This project was built to explore rule- and corpus-based conversational systems in Python, with a focus on chatbot training workflows and simple natural language interaction.
 
-	pip install chatterbot
+## Requirements
+- Python 3.x
+- pip
 
-	2.	chatterbot_corpus: For pre-trained conversational data.
+## Installation
+Install the required packages:
 
-	pip install chatterbot_corpus
-	
-	3.	spacy: For natural language processing (NLP) tasks.
+```bash
+pip install chatterbot chatterbot-corpus spacy
+python -m spacy download en_core_web_sm
+How to Run
+Run the chatbot from the project directory:
 
-	pip install spacy
-	
-	4.	English Model for SpaCy: You also need to download the English model.
+bash
+python text_chatbot.py
 
-	python -m spacy download en_core_web_sm
-	
-Installation Command:
+Usage
+Type a message and press Enter to chat
+Type exit, quit, or bye to close the program
 
-	To install all necessary libraries in one go, use the following command:
-	pip install chatterbot chatterbot_corpus spacy
-	python -m spacy download en_core_web_sm
-	
-Running the Chatbot:
+Notes
+This project uses ChatterBot rather than a modern large language model. It is intended as a lightweight chatbot project demonstrating classic Python-based conversational AI tools.
 
-	Follow the specific instructions in your Python script to get the chatbot up and running. To run the chatbot, use 	the following command:
-	python text_chatbot.py
+Future Improvements
+Expand custom training data
+Improve response quality and consistency
+Add conversation logging
+Add a simple GUI version
